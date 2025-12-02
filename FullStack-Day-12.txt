@@ -1,0 +1,59 @@
+Day 12:
+===========
+
+1) Functional Programming in Python
+==========================================
+Functional Programming focuses on writing clean, reusable functions that avoid changing data (no side effects).
+Python supports functional programming through:
+Pure functions
+Higher-order functions
+Built-in functions: map(), filter(), reduce()
+Lambda (anonymous) functions
+
+Key ideas:
+Functions take input and return output
+Avoid modifying global state
+Use functions as values (pass, store, return them)
+
+Example:
+
+def square(x):
+    return x * x
+
+print(square(4))   # 16
+
+# Using map (functional style)
+nums = [1, 2, 3]
+print(list(map(square, nums)))  # [1, 4, 9]
+
+
+2) Types of Functions
+===========================
+Python supports two main types:
+
+
+a) Built-in Functions
+============================
+Already available in Python.
+
+Examples: len(), print(), max(), sum()
+
+print(len("Python"))
+
+
+b) User-Defined Functions (UDF)
+======================================
+Functions created by programmers using def.
+
+def greet(name):
+    return f"Hello {name}"
+
+print(greet("Nikhil"))
+
+
+c) Lambda Functions
+==========================
+Small anonymous functions using one expression.
+
+square = lambda x: x*x
+print(square(5))   # 25
